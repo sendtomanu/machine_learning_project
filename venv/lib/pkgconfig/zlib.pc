@@ -1,0 +1,13 @@
+prefix=/Users/manbirsingh/Projects/FirstMachine/machine_learning_project/venv
+exec_prefix=/Users/manbirsingh/Projects/FirstMachine/machine_learning_project/venv
+libdir=/Users/manbirsingh/Projects/FirstMachine/machine_learning_project/venv/lib
+sharedlibdir=/Users/manbirsingh/Projects/FirstMachine/machine_learning_project/venv/lib
+includedir=/Users/manbirsingh/Projects/FirstMachine/machine_learning_project/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.12
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
