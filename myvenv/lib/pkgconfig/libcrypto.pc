@@ -1,0 +1,13 @@
+prefix=/Users/manbirsingh/Projects/FirstMachine/machine_learning_project/myvenv
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+enginesdir=${libdir}/engines
+
+Name: OpenSSL-libcrypto
+Description: OpenSSL cryptography library
+Version: 1.0.2u
+Requires: 
+Libs: -L${libdir} -lcrypto
+Libs.private: -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/manbirsingh/Projects/FirstMachine/machine_learning_project/myvenv/lib -L/Users/manbirsingh/Projects/FirstMachine/machine_learning_project/myvenv/lib 
+Cflags: -I${includedir} 
